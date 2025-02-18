@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Parcial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: white;
+        }
+        header {
+            background: #004080;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            max-width: 80px;
+            margin-left: 20px;
+        }
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .info {
+            font-size: 14px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        .content {
+            min-height: 300px;
+            padding: 20px;
+        }
+        footer {
+            background: #004080;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Universidad" class="logo">
+        <div class="header-text">Universidad Gerardo Barrios</div>
+        <div class="info">
+            <p><strong>Carrera:</strong> <span id="carrera"></span></p>
+            <p><strong>Código de Estudiante:</strong> <span id="codigo"></span></p>
+        </div>
+    </header>
+    
+    <div class="content"></div>
+    
+    <footer>
+        <p>Nombre del Estudiante: <span id="nombre"></span></p>
+        <p>Examen Parcial - Primer Cómputo</p>
+    </footer>
+    
+    <script>
+        // Permite personalizar los datos del estudiante
+        document.getElementById("carrera").innerText = "Ingeniería en Sistemas";
+        document.getElementById("codigo").innerText = "202300123";
+        document.getElementById("nombre").innerText = "Juan Pérez";
+    </script>
+</body>
+</html>
